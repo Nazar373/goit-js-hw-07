@@ -37,9 +37,6 @@ function modalWindow(e) {
   <img src="${e.target.dataset.source}">
   `);
   instance.show();
-  if (e.code === 'Escape' && instance.visible()) {
-    instance.close();
-  }
   gallery.addEventListener('keydown', e => {
     if (e.code === 'Escape') {
       instance.close();
